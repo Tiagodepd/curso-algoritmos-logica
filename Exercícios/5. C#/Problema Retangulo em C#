@@ -1,0 +1,28 @@
+using System;
+using System.Globalization;
+namespace Programa
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            CultureInfo CI = CultureInfo.InvariantCulture;
+            
+            double largura, altura, area, perimetro, diagonal;
+
+            Console.Write("Qual é a base do retângulo? ");
+            largura = double.Parse(Console.ReadLine(), CI);
+            Console.Write("Qual é a altura do retângulo? ");
+            altura = double.Parse(Console.ReadLine(), CI);
+
+            area = largura * altura;
+            perimetro = 2 * largura + 2 * altura;
+            diagonal = Math.Sqrt(Math.Pow(largura, 2) + Math.Pow(altura, 2));
+
+            Console.WriteLine("Área = " + area.ToString("F4", CI));
+            Console.WriteLine("Perímetro = " + perimetro.ToString("F4", CI));
+            Console.WriteLine("Diagonal = " + diagonal.ToString("F4", CI));
+
+        }
+    }
+}

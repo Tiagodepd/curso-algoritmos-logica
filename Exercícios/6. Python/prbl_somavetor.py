@@ -15,5 +15,5 @@ for i in range(0, N):
   soma = soma + vet[i]
 print(f"SOMA = {soma:.2f}")
 
-media = soma / N
+media = soma / N 
 print(f"MÉDIA = {media:.2f}")  
